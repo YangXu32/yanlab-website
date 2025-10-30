@@ -179,7 +179,7 @@ const OurTeam = () => {
             <div style={{ margin: '2rem 0 0 0', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
               <div style={{ fontWeight: 600, fontSize: '1.5rem', color: '#232946', marginBottom: '0.5rem', textAlign: 'center' }}>Graduate Students</div>
               <div style={{ marginBottom: '2rem', display: 'inline-block', textAlign: 'left' }}>
-                <b>1. Deeksha Satyabola (Graduate student, Fall 2021)</b><br />Johnson & Johnson<br /><br />
+                <b>1. Deeksha Satyabola (Graduate student, Fall 2021)</b><br />Postdoc, Johnson & Johnson<br /><br />
                 <b>2. Lu Yu (Graduate student, Fall 2019)</b><br />Postdoc, University of Washington<br /><br />
                 <b>3. Liangxiao Chen (Graduate student, Fall 2019)</b><br />Postdoc, Harvard University<br /><br />
                 <b>4. Leeza Abraham (Graduate student, Fall 2018)</b><br />Senior Scientist, Exodigm Biosciences<br /><br />
