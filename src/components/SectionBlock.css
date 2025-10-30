@@ -1,0 +1,70 @@
+.section-block.assembly-publications .section-block-image {
+	align-items: flex-start;
+	justify-content: center;
+}
+.section-block.assembly-publications .section-block-image img {
+	max-width: 650px;
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+/* SectionBlock: side-by-side image and text layout */
+.section-block {
+	display: flex;
+	align-items: center;
+	background: transparent;
+	border-radius: 0;
+	box-shadow: none;
+	margin-bottom: 2rem;
+	padding: 0;
+	gap: 2rem;
+}
+
+.section-block.reverse {
+	flex-direction: row-reverse;
+}
+
+.section-block-image {
+	flex: 1 1 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-block-image img {
+	max-width: 400px;
+	width: 100%;
+	height: auto;
+	border-radius: 0;
+	box-shadow: none;
+	background: transparent;
+	padding: 0;
+	display: block;
+}
+
+.section-block-image {
+	flex: 1 1 300px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+.section-block-text h3 {
+	font-size: 1.35rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	color: #1e293b;
+	font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.section-block-text p {
+	font-size: 0.9075rem;
+	color: #475569;
+	line-height: 1.8;
+	max-width: 900px;
+	margin: 0;
+	font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+	font-weight: 400;
+	text-align: justify;
+}

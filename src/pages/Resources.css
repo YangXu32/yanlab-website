@@ -1,0 +1,243 @@
+.resources-page {
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Inter, Arial, sans-serif';
+  color: #232946;
+}
+
+.resources-hero {
+  text-align: center;
+  padding: 4rem 0;
+  margin-bottom: 6rem;
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.resources-grid-section {
+  margin-bottom: 8rem;
+  width: 100%;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin: 4rem 0;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Ensure grid uses full width when there are fewer cards */
+@media (min-width: 768px) {
+  .resources-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .resources-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
+
+@media (min-width: 1400px) {
+  .resources-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.resource-category {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 0;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4a90e2, #7b68ee);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.resource-category:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  border-color: #4a90e2;
+}
+
+.resource-category:hover::before {
+  transform: scaleX(1);
+}
+
+.category-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #232946;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+  font-family: 'Inter, Arial, sans-serif';
+  text-align: center;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.category-icon {
+  font-size: 1.3rem;
+  color: #4a90e2;
+}
+
+.resource-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex-grow: 1;
+}
+
+.resource-item {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 0;
+  border-left: 4px solid #4a90e2;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.resource-item:hover {
+  background: #e3f2fd;
+  transform: translateX(8px);
+  box-shadow: 0 4px 16px rgba(74, 144, 226, 0.1);
+}
+
+.item-name {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #232946;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+  font-family: 'Inter, Arial, sans-serif';
+}
+
+.item-description {
+  font-size: 1.05rem;
+  color: #232946;
+  line-height: 1.5;
+  font-family: 'Inter, Arial, sans-serif';
+}
+
+.contact-section {
+  margin-bottom: 6rem;
+  width: 100%;
+}
+
+.contact-card {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 0;
+  padding: 4rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.contact-card h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+
+.contact-card p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+}
+
+.contact-info {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 0;
+  border: 1px solid #e9ecef;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.contact-info p {
+  color: #666;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.contact-info p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .resources-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+  }
+  
+  .contact-card {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .resources-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .resources-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .resource-category {
+    padding: 2.5rem 2rem;
+  }
+  
+  .category-title {
+    font-size: 1.3rem;
+  }
+  
+  .resource-item {
+    padding: 1.2rem;
+  }
+  
+  .contact-card {
+    padding: 2.5rem;
+  }
+  
+  .contact-card h3 {
+    font-size: 1.6rem;
+  }
+} 

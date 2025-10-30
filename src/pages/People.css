@@ -1,0 +1,500 @@
+.people-page {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Team Sections */
+.team-section {
+  margin-bottom: 6rem;
+  width: 100%;
+}
+
+.team-section .section-title {
+  font-size: clamp(3.6rem, 7.2vw, 5.4rem);
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-bottom: 3px solid #e67e22;
+  padding-bottom: 1rem;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+.section-icon {
+  color: #4a90e2;
+  font-size: 3.6rem;
+}
+
+.expandable-title {
+  cursor: pointer;
+  transition: color 0.3s ease;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.expandable-title:hover {
+  color: #4a90e2;
+  }
+
+  .people-content-wrapper h3,
+  .people-content-wrapper p,
+  }
+
+    font-size: 1.4rem !important;
+  }
+}
+    font-size: 2rem !important;
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.faculty-grid {
+  grid-template-columns: 1fr;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+/* Person Cards */
+.person-card {
+  background: #ffffff;
+  border-radius: 0;
+  padding: 2rem;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.person-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4a90e2, #7b68ee);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.person-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  border-color: #4a90e2;
+}
+
+.person-card:hover::before {
+  transform: scaleX(1);
+}
+
+.person-card.faculty {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.person-avatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #4a90e2, #7b68ee);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+  color: white;
+  font-size: 3.6rem;
+}
+
+.faculty .person-avatar {
+  width: 100px;
+  height: 100px;
+  font-size: 4.5rem;
+  background: linear-gradient(135deg, #e67e22, #f39c12);
+}
+
+.person-info {
+  text-align: center;
+}
+
+.person-name {
+  font-size: 3.6rem !important;
+  font-size: 3.6rem;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.faculty .person-name {
+  font-size: 3.6rem;
+  margin-bottom: 1rem;
+}
+
+.person-title {
+  font-size: 3.6rem !important;
+  font-size: 3.6rem !important;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.person-position {
+  font-size: 1.98rem;
+  font-size: 3.6rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.person-department {
+  font-size: 1.8rem;
+  font-size: 3.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.person-institute {
+  font-size: 1.8rem;
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+/* Contact Information */
+.contact-info {
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.62rem;
+  font-size: 3.6rem;
+}
+
+.contact-item svg {
+  color: #4a90e2;
+  font-size: 0.8rem;
+  min-width: 16px;
+}
+
+.contact-item a {
+  color: #4a90e2;
+  font-size: 3.6rem;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #2d5aa0;
+  text-decoration: underline;
+}
+
+/* Research Information */
+.research-interests,
+.awards {
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.research-interests h4,
+.awards h4 {
+  font-size: 1.98rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 0.5rem;
+}
+
+.research-interests ul,
+.awards ul {
+  list-style: none;
+  padding: 0;
+}
+
+.research-interests li {
+  font-size: 1.62rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.research-interests li::before {
+  content: '•';
+  color: #4a90e2;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.awards li {
+  font-size: 1.62rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.awards li svg {
+  color: #f39c12;
+  font-size: 0.8rem;
+}
+
+/* Student Information */
+.research-focus,
+.research-area {
+  font-size: 1.62rem;
+  color: #666;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.education,
+.student-year,
+.advisor,
+.student-details,
+.program,
+.university,
+.current-position {
+  font-size: 1.62rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.advisor {
+  color: #4a90e2;
+  font-weight: 500;
+}
+
+.current-position {
+  color: #2d5aa0;
+  font-weight: 500;
+}
+
+/* Lab Information Section */
+.lab-info-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-radius: 0;
+  padding: 4rem;
+  margin-top: 4rem;
+  text-align: center;
+  border: 1px solid #e9ecef;
+}
+
+.lab-info-content h2 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+
+.lab-info-content > p {
+  font-size: 2.16rem;
+  color: #666;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.opportunities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.opportunity-card {
+  background: #ffffff;
+  border-radius: 0;
+  padding: 2rem;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.opportunity-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: #4a90e2;
+}
+
+.opportunity-card h3 {
+  font-size: 2.34rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.opportunity-card p {
+  font-size: 1.8rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.contact-cta {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 2px solid #e9ecef;
+}
+
+.contact-cta h3 {
+  font-size: 4.86rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.contact-cta p {
+  font-size: 2.97rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #4a90e2, #7b68ee);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.98rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+}
+
+.contact-button:hover {
+  background: linear-gradient(135deg, #3a7bd5, #6b58e3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .opportunities {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-section .section-title {
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .team-section .section-title {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .person-card {
+    padding: 1.5rem;
+  }
+  
+  .lab-info-section {
+    padding: 2.5rem;
+  }
+  
+  .lab-info-content h2 {
+    font-size: 2rem;
+  }
+  
+  .lab-info-content > p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-section .section-title {
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
+  }
+  
+  .person-card {
+    padding: 1rem;
+  }
+  
+  .person-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  
+  .faculty .person-avatar {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+  
+  .person-name {
+    font-size: 1.2rem;
+  }
+  
+  .faculty .person-name {
+    font-size: 1.5rem;
+  }
+  
+  .lab-info-section {
+    padding: 2rem;
+  }
+  
+  .contact-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Expandable Section Animation */
+.expandable-section {
+  width: 100%;
+}
+
+/* Custom scrollbar for long content */
+.person-card::-webkit-scrollbar {
+  width: 6px;
+}
+
+.person-card::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0;
+}
+
+.person-card::-webkit-scrollbar-thumb {
+  background: #4a90e2;
+  font-size: 1.6875rem;
+  font-family: 'Inter', Helvetica Neue, Arial, sans-serif;
+}
+
+.person-card::-webkit-scrollbar-thumb:hover {
+  background: #2d5aa0;
+}

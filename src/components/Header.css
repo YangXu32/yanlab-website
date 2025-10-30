@@ -1,0 +1,65 @@
+.header {
+  background-color: #8c1d40; /* ASU Maroon */
+  color: white;
+  padding: 10px 0; /* balanced vertical height */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  border-bottom: 2px solid #8c1d40;
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif; /* ASU default font */
+}
+
+.header-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.header-logo {
+  font-size: 30px;          /* increased from 22 → 30 */
+  font-weight: 700;         /* strong bold */
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 45px;                /* spacing between nav items */
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;          /* slightly larger than before */
+  font-weight: 600;         /* bolder for emphasis */
+  letter-spacing: 0.3px;
+  transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: #ffcb05; /* ASU gold hover effect */
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    padding: 12px 20px;
+  }
+
+  .header-nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header-logo {
+    margin-bottom: 8px;
+  }
+}
